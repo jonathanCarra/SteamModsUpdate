@@ -3,8 +3,6 @@ steamPath=$( cat < "./SteamModsUpdate.config" )
 logFile="$steamcmdAppRoot/SteamUpdateLog.txt"
 tmpLogFile="$steamcmdAppRoot/tmp.log"
 
-echo -n $steamPath
-
 function Write-Log {
 	echo -e $1
 	echo $1 | sed -r 's/\\033[^m]+m//g' >> $logFile
