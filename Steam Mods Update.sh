@@ -1,5 +1,5 @@
 steamcmdAppRoot="./SteamCMD"
-steamPath=$( cat < "./SteamModUpdate.config" )
+steamPath=$( cat < "./SteamModsUpdate.config" )
 logFile="$steamcmdAppRoot/SteamUpdateLog.txt"
 tmpLogFile="$steamcmdAppRoot/tmp.log"
 
